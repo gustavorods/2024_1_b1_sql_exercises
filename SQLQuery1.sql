@@ -17,15 +17,14 @@ Sexo varchar(9)
 );
 
 -- Criando os animais 
-INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo)
-VALUES (1, 'Toto', 'cachorro', 'Galgo inglês', 'verde', '01/01/2011', 'macho'),
- (2, 'scooby', 'cachorro', 'Vira lata', 'marrom', '07/07/2007', 'macho'),
- (3, 'Filó', 'gato', 'Vira lata', 'preto', '07/02/2017', 'Fêmea'),
- (4, 'Nube', 'papagaio', 'arara', 'azul', '03/06/2003', 'macho'),
- (5, 'Linkdin', 'macaco', 'macaco prego', 'roxo', '03/08/2015', 'macho'),
- (6, 'penelope', 'cachorro', 'Vira lata', 'branca', '01/01/2005', 'Fêmea'),
- (7, 'Amora', 'cachorro', 'Shih-Tzu', 'verde', '11/04/2001', 'Fêmea'),
- (8, 'Piracicaba', 'gato', 'Siamês', 'amarelo', '30/12/2021', 'Fêmea')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (1, 'Toto', 'cachorro', 'Galgo inglÃªs', 'verde', '01/01/2011', 'macho')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (2, 'scooby', 'cachorro', 'Vira lata', 'marrom', '07/07/2007', 'macho')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (3, 'FilÃ³', 'gato', 'Vira lata', 'preto', '07/02/2017', 'FÃªmea')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (4, 'Nube', 'papagaio', 'arara', 'azul', '03/06/2003', 'macho')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (5, 'Linkdin', 'macaco', 'macaco prego', 'roxo', '03/08/2015', 'macho')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (6, 'penelope', 'cachorro', 'Vira lata', 'branca', '01/01/2005', 'FÃªmea')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (7, 'Amora', 'cachorro', 'Shih-Tzu', 'verde', '11/04/2001', 'FÃªmea')
+INSERT INTO pet (NumRegistro, Nome, Especie, Raca, Cor, Nasciemento, Sexo) VALUES (8, 'Piracicaba', 'gato', 'SiamÃªs', 'amarelo', '30/12/2021', 'FÃªmea')
 
  SELECT *FROM pet
 -- -----------------------------------------------------------------------------
@@ -56,17 +55,16 @@ create table Funcionario(
 
 
 -- Criando os departamentos
-INSERT INTO Departamento (CodDepto, NomeDepto)
-VALUES (1, 'Marketing'), 
- (2, 'Contabilidade'),
- (3, 'Administrativo'),
- (4, 'Desenvolvimento web'),
- (5, 'Desenvolvimento App')
+INSERT INTO Departamento (CodDepto, NomeDepto) VALUES (1, 'Marketing') 
+INSERT INTO Departamento (CodDepto, NomeDepto) VALUES (2, 'Contabilidade')
+INSERT INTO Departamento (CodDepto, NomeDepto) VALUES (3, 'Administrativo')
+INSERT INTO Departamento (CodDepto, NomeDepto) VALUES (4, 'Desenvolvimento web')
+INSERT INTO Departamento (CodDepto, NomeDepto) VALUES (5, 'Desenvolvimento App')
 
  SELECT *FROM Departamento
 
 -- Criando os Funcionarios
-INSERT INTO Funcionario (CodFunc, NomeFunc, CodDepto, remal, Salario, DataAdmissao, DataCadastro, sexo) VALUES (1, 'João Silva', 1, 111, 3000.00, '14/01/2023', '14/01/2023', 'M')
+INSERT INTO Funcionario (CodFunc, NomeFunc, CodDepto, remal, Salario, DataAdmissao, DataCadastro, sexo) VALUES (1, 'JoÃ£o Silva', 1, 111, 3000.00, '14/01/2023', '14/01/2023', 'M')
 INSERT INTO Funcionario (CodFunc, NomeFunc, CodDepto, remal, Salario, DataAdmissao, DataCadastro, sexo) VALUES (2, 'Maria Oliveira', 1, 222, 3500.00, '20/02/2023', '20/02/2023', 'F')
 INSERT INTO Funcionario (CodFunc, NomeFunc, CodDepto, remal, Salario, DataAdmissao, DataCadastro, sexo) VALUES (3, 'Pedro Santos', 2, 333, 3200.00, '10/03/2023', '10/03/2023', 'M')
 INSERT INTO Funcionario (CodFunc, NomeFunc, CodDepto, remal, Salario, DataAdmissao, DataCadastro, sexo) VALUES (4, 'Ana Souza', 2, 444, 3800.00, '05/04/2023', '05/04/2023', 'F')
